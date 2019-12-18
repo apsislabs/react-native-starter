@@ -4,9 +4,26 @@ Welcome to the React Native Starter.
 
 Follow these steps, then delete this portion of the README.
 
+## Rename
+
+Rename your application from the react starter.
+
 1. `yarn install`
 2. `yarn run rename` to rename the application from the starter
 3. `(cd ios && pod install)`
+
+## Install Common Packages
+
+The react starter comes with some built in packages. Consider adding the following common packages.
+
+```
+yarn add moment # date/time management
+```
+
+## Clean up
+
+1. Delete this starting section of the README
+2. `rm bin/rename.js` # delete the rename component
 
 # Development
 
