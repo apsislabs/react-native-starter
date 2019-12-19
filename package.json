@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "generate": "node gen/generate.js",
+    "generate": "npx sparkgen",
     "rename": "node bin/rename.js",
     "test": "jest",
     "lint": "eslint ."
@@ -44,7 +44,8 @@
     "prompt": "^1.0.0",
     "react-native-typescript-transformer": "^1.2.13",
     "react-test-renderer": "16.9.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.3",
+    "sparkgen": "^0.1.2"
   },
   "jest": {
     "preset": "react-native"

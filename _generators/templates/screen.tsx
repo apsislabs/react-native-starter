@@ -6,16 +6,16 @@ import { Containers } from '../styles';
 
 export const _NAME_ = (props: any) => {
   return (
-      <View style={styles.container}>
-         <Text>_NAME_ Screen</Text> 
-      </View>
+    <View style={styles.container}>
+      <Text>_NAME_ Screen</Text>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-    container: {
-      ...Containers.tempScreen
-    }
+  container: {
+    ...Containers.tempScreen
+  }
 });
 
 const mapState = (state: any) => {

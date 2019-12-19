@@ -6549,6 +6549,11 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+sparkgen@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/sparkgen/-/sparkgen-0.1.2.tgz#1ac25b29cc547f2798459bd1d2fe926dca2616e9"
+  integrity sha512-PZ+0VPguhM7CNjnUMdqaVYl+KAqaeZW8E+AQs7KZqWmIHpyGeEu0hPVLLXa7n8S68EpxYxhy7wVmE534wtq/cQ==
+
 spdx-correct@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-3.1.0.tgz#fb83e504445268f154b074e218c87c003cd31df4"

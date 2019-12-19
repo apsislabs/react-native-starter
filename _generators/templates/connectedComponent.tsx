@@ -5,19 +5,19 @@ import { connect } from 'react-redux';
 
 import { State } from '../reducers/root';
 
-interface _NAMEPROPS_ {
+interface _NAME_Props {
 }
 
 interface ComponentProps {
 }
 
 const Component = (props: ComponentProps) => {
-    return <View style={{}}>
-        <Text>_NAME_ Component</Text>
-    </View>
+  return <View style={{}}>
+    <Text>_NAME_ Component</Text>
+  </View>
 };
 
-const mapState = (state: State, ownProps: _NAMEPROPS_): any => {
+const mapState = (state: State, ownProps: _NAME_Props): any => {
   return {}
 }
 

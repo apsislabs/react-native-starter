@@ -1,6 +1,6 @@
 const { templateGenerator } = require('sparkgen');
 
-module.exports = templateGenerator("connected-component", ["cc"], component => {  
+module.exports = templateGenerator("component", [], component => {
     return {
       root: 'components',
       index: undefined,
@@ -8,7 +8,7 @@ module.exports = templateGenerator("connected-component", ["cc"], component => {
       replacements: [
         { r: /_NAME_/g, v: component},
       ],
-      template: 'connectedComponent.tsx',
+      template: 'component.tsx',
       output: `${component}.tsx`
     }
   });
