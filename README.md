@@ -18,6 +18,8 @@ The react starter comes with some built in packages. Consider adding the followi
 
 ```
 yarn add moment # date/time management
+yarn add immer  # immutable data management
+yarn add use-immer # immer hooks data
 ```
 
 ## Clean up
