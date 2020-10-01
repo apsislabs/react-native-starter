@@ -35,13 +35,13 @@ React Native requires a number of dependencies for iOS or Android development. E
 
 ## Getting Started
 
-1. `yarn install`
+1. `npm install`
 2. `(cd ios && pod install)`
-3. `yarn run ios` | `yarn run android`
+3. `npm run ios` | `npm run android`
 
 ## Testing
 
-1. `yarn test`
+1. `npm test`
 
 ## State Management
 
@@ -56,4 +56,4 @@ React Native requires a number of dependencies for iOS or Android development. E
 For creating certain elements, we have generators that will create the new component for you.
 
 To create a new `BarScreen`:
-`yarn run generate screen Bar`
+`npm run generate screen Bar`
