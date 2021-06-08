@@ -1,12 +1,11 @@
 // jest.config.js
-const { defaults: tsjPreset } = require('ts-jest/presets');
+
+const esModules = ['react-native-iphone-x-helper'].join('|');
 
 module.exports = {
-  ...tsjPreset,
   preset: 'react-native',
   transform: {
-    ...tsjPreset.transform,
-    '\\.js$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',
+    [`(${esModules}).+\\.js$`]: 'ts-jest',
   },
   globals: {
     'ts-jest': {
