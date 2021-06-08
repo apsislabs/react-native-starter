@@ -10,7 +10,7 @@ Rename your application from the react starter.
 
 1. `npm install`
 2. `npm run rename` to rename the application from the starter
-3. `(cd ios && pod install)`
+3. `npm run setup`
 
 ## Install Common Packages
 
@@ -36,16 +36,12 @@ React Native requires a number of dependencies for iOS or Android development. E
 ## Getting Started
 
 1. `npm install`
-2. `(cd ios && pod install)`
+2. `npm run setup`
 3. `npm run ios` | `npm run android`
 
 ## Testing
 
 1. `npm test`
-
-## State Management
-
-`redux`, `react-redux`, and `@reduxjs/toolkit` are all installed for managing state. If you install the [React Native Debugger](https://github.com/jhen0409/react-native-debugger) you can debug the state live.
 
 ## UI Hierarchy
 

@@ -1,40 +1,46 @@
 // components/Example.tsx
-import React from "react"
-import { Button, StyleSheet, Text, View } from "react-native"
+import React from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 export interface Props {
-  name: string
-  enthusiasmLevel?: number
-  onIncrement?: () => void
-  onDecrement?: () => void
+  name: string;
+  enthusiasmLevel?: number;
+  onIncrement?: () => void;
+  onDecrement?: () => void;
 }
 
 interface State {
-  enthusiasmLevel: number
+  enthusiasmLevel: number;
 }
 
 export class Example extends React.Component<Props, State> {
   constructor(props: Props) {
-    super(props)
+    super(props);
 
     if ((props.enthusiasmLevel || 0) <= 0) {
-      throw new Error("You could be a little more enthusiastic. :D")
+      throw new Error('You could be a little more enthusiastic. :D');
     }
 
     this.state = {
-      enthusiasmLevel: props.enthusiasmLevel || 1
-    }
+      enthusiasmLevel: props.enthusiasmLevel || 1,
+    };
   }
 
-  onIncrement = () => this.setState({ enthusiasmLevel: this.state.enthusiasmLevel + 1 });
-  onDecrement = () => this.setState({ enthusiasmLevel: Math.max(0, this.state.enthusiasmLevel - 1) });
-  getExclamationMarks = (numChars: number) => Array(numChars + 1).join("!")
+  onIncrement = () =>
+    this.setState({ enthusiasmLevel: this.state.enthusiasmLevel + 1 });
+  onDecrement = () =>
+    this.setState({
+      enthusiasmLevel: Math.max(0, this.state.enthusiasmLevel - 1),
+    });
+  getExclamationMarks = (numChars: number) => Array(numChars + 1).join('!');
 
   render() {
     return (
       <View style={styles.root}>
         <Text style={styles.greeting}>
-          Hello {this.props.name + this.getExclamationMarks(this.state.enthusiasmLevel)}
+          Hello{' '}
+          {this.props.name +
+            this.getExclamationMarks(this.state.enthusiasmLevel)}
         </Text>
 
         <View style={styles.buttons}>
@@ -57,7 +63,7 @@ export class Example extends React.Component<Props, State> {
           </View>
         </View>
       </View>
-    )
+    );
   }
 }
 
@@ -65,22 +71,22 @@ export class Example extends React.Component<Props, State> {
 
 const styles = StyleSheet.create({
   root: {
-    alignItems: "center",
-    alignSelf: "center"
+    alignItems: 'center',
+    alignSelf: 'center',
   },
   buttons: {
-    flexDirection: "row",
+    flexDirection: 'row',
     minHeight: 70,
-    alignItems: "stretch",
-    alignSelf: "center",
-    borderWidth: 5
+    alignItems: 'stretch',
+    alignSelf: 'center',
+    borderWidth: 5,
   },
   button: {
     flex: 1,
-    paddingVertical: 0
+    paddingVertical: 0,
   },
   greeting: {
-    color: "#999",
-    fontWeight: "bold"
-  }
-})
+    color: '#999',
+    fontWeight: 'bold',
+  },
+});
