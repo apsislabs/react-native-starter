@@ -43,6 +43,12 @@ React Native requires a number of dependencies for iOS or Android development. E
 
 1. `npm test`
 
+### My tests don't work!
+
+You _almost certainly_ have to update the `esModules` array in in `jest.config.json` to account for an uncompiled package.
+
+Another option is something is not mocked, and you'll need to mock it in `jest/setup.ts`.
+
 ## UI Hierarchy
 
 `react-navigation` is added for managing navigation state

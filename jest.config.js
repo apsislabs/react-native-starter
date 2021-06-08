@@ -1,16 +1,24 @@
 // jest.config.js
 
-const esModules = ['react-native-iphone-x-helper'].join('|');
+const esModules = [
+  'react-native',
+  '@react-native',
+  'react-clone-referenced-element',
+  '@react-native-community',
+  'expo(nent)?',
+  '@expo(nent)?/.*',
+  'react-navigation',
+  '@react-navigation/.*',
+  '@unimodules/.*',
+  'unimodules',
+  'sentry-expo',
+  'native-base',
+  '@sentry',
+].join('|');
 
 module.exports = {
   preset: 'react-native',
-  transform: {
-    [`(${esModules}).+\\.js$`]: 'ts-jest',
-  },
-  globals: {
-    'ts-jest': {
-      babelConfig: true,
-    },
-  },
+  transformIgnorePatterns: [`node_modules/(?!(jest-)?${esModules}/.*)`],
+  cacheDirectory: '.jest/cache',
   setupFiles: ['<rootDir>/jest/setup.ts'],
 };
